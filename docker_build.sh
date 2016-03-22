@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+#parent-image
+cd parent-image
+sudo docker build -t parent .
+cd ..
+
 #rocker
 sudo docker build --build-arg SCRIPT=scripts/rocker.sh -t rocker .
 

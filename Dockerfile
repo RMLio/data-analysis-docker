@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM parent
 ARG SCRIPT
 
 #ENV SCRIPT scripts/run.sh
